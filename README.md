@@ -32,7 +32,6 @@ Libraries for data processing, visualization, and LLM APIs.
 
 <h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 2: Mount Google Drive</h2>
 ```python
-Copy
 from google.colab import drive
 drive.mount('/content/drive')
 Access datasets stored in Google Drive.
@@ -40,7 +39,6 @@ Access datasets stored in Google Drive.
 
 <h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 3: Connect to LLM API</h2>
 ```python
-Copy
 openai.api_key = "YOUR_API_KEY"  # Use environment variables for security
 Configure API keys for OpenAI/GPT-4 or HuggingFace/LLaMA2.
 ```
@@ -51,7 +49,6 @@ Feed logs to LLM with engineered prompts (e.g., "Classify this traffic: [LOG_ENT
 
 <h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 5: Classify Attacks</h2>
 ```python
-Copy
 results = []
 for index, row in df.iterrows():
     prompt = f"Classify this traffic: {row['log']}"
@@ -61,14 +58,12 @@ Store outputs as Attack or Non-Attack in a DataFrame.
 ```
 <h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 6: Evaluate Metrics</h2>
 ```python
-Copy
 from sklearn.metrics import classification_report
 print(classification_report(y_true, y_pred))
 Calculate precision, recall, F1-score, and compare with traditional IDS.
 ```
 <h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 7: Visualize Results</h2>
 ```python
-
 import seaborn as sns
 sns.heatmap(confusion_matrix(y_true, y_pred), annot=True)
 ```

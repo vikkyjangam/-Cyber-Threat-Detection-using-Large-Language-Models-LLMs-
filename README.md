@@ -87,3 +87,21 @@ Always sanitize logs before LLM processing.
 Use environment variables for API keys.
 
 Audit model outputs for bias/false negatives.
+
+
+
+
+FOR DATASETS (DRIVE LINK FOR BOTH GEMINI AND OPEN AI)
+https://drive.google.com/drive/folders/14sO7wMlerHFDFO2x3zE1iOBW0ixSL49s?usp=sharing
+
+OUTPUT:
+FOR GEMINI LLM:
+![App Screenshot 1](Gemini1.png)
+![App Screenshot 2](Gemini2.png)
+![App Screenshot 3](Gemini3.png)
+![App Screenshot 4](Gemini4.png)
+FOR OPEN AI:
+![App Screenshot 1](OpenAPI1.png)
+![App Screenshot 2](OpenAPI2.png)
+![App Screenshot 3](OpenAPI3.png)
+![App Screenshot 4](OpenAPI4.png)

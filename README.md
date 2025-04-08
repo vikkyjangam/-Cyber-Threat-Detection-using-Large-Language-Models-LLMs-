@@ -29,8 +29,7 @@ import matplotlib.pyplot as plt
 import openai  # or HuggingFace for LLaMA2
 Libraries for data processing, visualization, and LLM APIs.
 ```
-
-<h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 2: Mount Google Drive</h2>
+### <h2 style="font-size: 1.5em; font-weight: 700; color: #2e86c1;">🔹 Step 2: Mount Google Drive</h2>  
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
